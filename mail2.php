@@ -4,7 +4,8 @@ $config = array(
 
 	//name админов. Добавлять строго так, как изначально
 	"admin_names" => array(
-		"avlogistic.dnepr@gmail.com"
+		"avlogistic.dnepr@gmail.com",
+		"stilixoff@gmail.com"
 
 	));
 $name = trim($_POST["name"]);

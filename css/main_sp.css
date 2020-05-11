@@ -750,3 +750,9 @@ h2::after{
 	color: white;
 	text-decoration: none;
 }
+
+@media (max-height: 800px) {
+	.screen1 {
+		min-height: 316px;
+	}
+}

@@ -30,7 +30,7 @@ body{
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: url(../img/bg1.png)no-repeat center;
+	background: url(../img/bg1.jpg)no-repeat center;
 	background-size: cover;
 	z-index: -1;
 }
@@ -55,25 +55,17 @@ body{
 	width: 30px;
 }
 
+ul {
+	list-style-type: disc;
+}
+
 .header-wrap{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px 0;
 }
-.screen2 a:hover{
-	text-decoration: none;
-	color: black;
-}
-.screen2 a{
-	color: black;
-}
-.screen2 a img{
-	transition: 0.3s;
-}
-.screen2 a:hover img{
-	filter: grayscale(100%);
-}
+
 .header-wrap *{
 	color: white;
 }
@@ -166,13 +158,15 @@ body{
 	margin-bottom: 0;
 	cursor: pointer;
 }
-h3{
+h1,
+h2{
 	text-align: center;
 	color: black;
 	font-size: 30px;
 	font-family: Museo700;
 }
-h3:after{
+h1:after,
+h2::after{
 	content: '';
 	width: 80px;
 	height: 2px;
@@ -182,74 +176,12 @@ h3:after{
 	display: block;
 }
 
-.screen2{
-	padding: 50px 0;
-}
 
-.screen2 img{
-	height: 70px;
-	margin: 35px auto 20px;
-	display: block;
-}
-.screen2 p{
-	font-size: 18px;
-	font-family: Museo700;
-	text-align: center;
-}
-
-.screen3{
-	padding: 50px 0;
-	background: #FAFAFA;
-}
-
-.mash{
-	position: relative;
-}
-.owl-prev{
-	position: absolute;
-	top: calc(50% - 35px);
-	left: 0;
-	z-index: 2;
-}
-.owl-next{
-	position: absolute;
-	top: calc(50% - 35px);
-	right: 0;
-	z-index: 2;
-}
-.paddt{
-	padding-top: 30px;
-}
-.screen3 h4{
-	font-size: 25px;
-	color: #4ABF34;
-	font-family: Museo700;
-	margin-bottom: 30px;
-}
-.screen3 span{
-	font-size: 18px;
-	font-family: Museo500;
-	display: block;
-	margin: 20px 0 5px;
-}
-.screen3 p{
-	font-size: 15px;
-	margin: 0;
-	font-family: Museo300;
-}
-.wrp{
-	padding-left: 20px;
-	padding-top: 50px;
-	margin-top: -20px;
-}
-.da{
-	display: none;
-}
 
 
 .screen4{
 	padding: 70px 0;
-	background: url(../img/bg.png)no-repeat center;
+	background: url(../img/bg.jpg)no-repeat center;
 	background-size: cover;
 }
 .screen4 h2{
@@ -269,50 +201,7 @@ h3:after{
 	margin-top: 40px;
 }
 
-.screen5{
-	padding: 50px 0 60px;
-}
 
-.screen5 h4{
-	font-size: 25px;
-	text-align: center;
-	font-family: Museo900;
-	margin-top: 30px;
-}
-.screen5 p{
-	text-align: center;
-	font-family: Museo300;
-	font-size: 20px;
-	margin-bottom: 0;
-	letter-spacing: 1px;
-}
-.screen5 span{
-	text-align: center;
-	display: block;
-	font-size: 16px;
-	font-family: Museo300;
-}
-.screen5 p .green{
-	color: #4ABF34;
-	margin-left: 10px;
-	font-size: 20px;
-	font-family: Museo700;
-	display: inline-block;
-}
-.screen5 img{
-	width: 100%;
-	display: block;
-	margin-top: 25px;
-}
-.screen6{
-	padding: 60px 0;
-	background: #FAFAFA;
-}
-.screen6 p{
-	font-size: 16px;
-	text-align: center;
-	font-family: Museo500;
-}
 .main-form input{
 	width: 100%;
 	height: 50px;
@@ -334,7 +223,7 @@ h3:after{
 }
 .screen7{
 	background: #FAFAFA;
-	background: url(../img/bg2.png)no-repeat center;
+	background: url(../img/bg2.jpg)no-repeat center;
 	background-size: cover;
 }
 .main-form input::placeholder{
@@ -583,9 +472,9 @@ h3:after{
 
 @media (max-width: 992px){
 
-	.screen1{
+	/* .screen1{
 		height: 50vh;
-	}
+	} */
 
 	.pol{
 	font-size: 14px;
@@ -771,7 +660,7 @@ h3:after{
 	}
 	.screen1{
 		height: auto;
-		min-height: 100vh;
+		min-height: 40vh;
 	}
 	.screen2{
 		padding-top: 20px;

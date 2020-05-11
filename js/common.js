@@ -2,7 +2,6 @@ $(document).ready(function(){
   jQuery(window).scroll(function() {
     // проверка на докрутку до определенного элемента
     var scroll_picca =jQuery('.screen6').offset().top;
-    console.log(scroll_picca) ;// выводим в консоль смещение  элемента пицца
     //если мы докрутили до нужного элемента 
     if (jQuery(this).scrollTop() > scroll_picca) {
       // создаем эффекты и анимацию

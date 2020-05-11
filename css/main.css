@@ -21,12 +21,17 @@ body{
 }
 
 .navbar {
+	width: 100%;
 	border-bottom: 1px solid #CCCCCC;
 	border-radius: 0%;
 	-webkit-border-radius: 0%;
 	-moz-border-radius: 0%;
 	-ms-border-radius: 0%;
 	-o-border-radius: 0%;
+}
+
+.bg-light {
+	background-color: white !important;
 }
 
 .navbar-nav {
@@ -112,7 +117,7 @@ body{
 }
 .screen1{
 	height: 100vh;
-	background: url(../img/bg1.png)no-repeat center;
+	background: url(../img/bg1.jpg)no-repeat center;
 	background-size: cover;
 	min-height: 200px;
 }
@@ -267,7 +272,7 @@ h3:after{
 
 .screen4{
 	padding: 70px 0;
-	background: url(../img/bg.png)no-repeat center;
+	background: url(../img/bg.jpg)no-repeat center;
 	background-size: cover;
 }
 .screen4 h2{
@@ -352,7 +357,7 @@ h3:after{
 }
 .screen7{
 	background: #FAFAFA;
-	background: url(../img/bg2.png)no-repeat center;
+	background: url(../img/bg2.jpg)no-repeat center;
 	background-size: cover;
 }
 .main-form input::placeholder{
@@ -569,7 +574,7 @@ h3:after{
 	justify-content: center;
 	flex-direction: column;
 	color: white;
-	background: url(../img/thank.png)no-repeat center;
+	background: url(../img/thank.jpg)no-repeat center;
 	background-size: cover;
 }
 .thank .header{
@@ -593,11 +598,21 @@ h3:after{
 }
 
 
+	.header {
+		width: 960px;
+	}
 
-
+@media (max-width: 1024px) {
+	.header {
+		width: 960px;
+	}
+}
 
 
 @media (max-width: 992px){
+	.header {
+		width: 960px;
+	}
 	.pol{
 	font-size: 14px;
 	color: white;

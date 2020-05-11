@@ -40,6 +40,10 @@ body{
 	width: 100%;
 }
 
+.navbar {
+	margin-bottom: 30px;
+}
+
 .navbar-nav li {
 	list-style-type: none;
 	font-size: 18px;
